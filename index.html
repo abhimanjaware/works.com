@@ -1,0 +1,450 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>WORKS</title>
+    <link rel="stylesheet" href="output.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/locomotive-scroll@3.5.4/dist/locomotive-scroll.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0&icon_names=menu" />
+<link href="https://fonts.googleapis.com/css2?family=Audiowide&family=Bebas+Neue&family=Eater&family=Edu+AU+VIC+WA+NT+Pre:wght@400..700&family=Moon+Dance&family=Oswald:wght@200..700&family=Playwrite+GB+S:ital,wght@0,100..400;1,100..400&family=Prosto+One&family=Rajdhani:wght@700&family=Sour+Gummy:ital,wght@0,100..900;1,100..900&family=Titan+One&display=swap" rel="stylesheet">
+<script src="https://cdn.tailwindcss.com"></script>
+<script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+<script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Audiowide&family=Bebas+Neue&family=Edu+AU+VIC+WA+NT+Pre:wght@400..700&family=Moon+Dance&family=Oswald:wght@200..700&family=Playwrite+GB+S:ital,wght@0,100..400;1,100..400&family=Prosto+One&family=Rajdhani:wght@700&family=Sour+Gummy:ital,wght@0,100..900;1,100..900&family=Titan+One&display=swap');
+        </style>
+        <style>
+            #page2{
+                height: 100vh;
+                width: 100%;
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                justify-content: center;
+                color: white;
+                background-color: black;
+                text-align: center;
+                
+            }
+
+           .elem{
+                /* background-color: red; */
+                width: 100%;
+                position: relative;
+                cursor: pointer;
+            }
+            .elem h2{
+                font-size: 6vw;
+                font-weight: 100;
+                font-family:Georgia, 'Times New Roman', Times, serif;
+                z-index: 10;
+                position: relative;
+                z-index: 9;
+                line-height: 7vw;
+                
+
+            }
+            .elem:hover h2{
+
+                font-style: italic;
+            }
+            .elem:hover h2{
+                color: black;
+                
+            }
+
+
+            .elem .moving{
+                background-color: #F5E31A;
+                width: 100%;
+                white-space: nowrap;
+                padding: 5px 0;
+                position: absolute;
+                top: 25%;
+                transform: translate(-50);
+                opacity: 0;
+                transition: all ease-in 0.4s;
+                overflow: hidden;
+
+            }
+
+            .elem:hover .moving{
+                    opacity: 1;
+                }
+
+                .elem .blur{
+                    height: 100%;
+                    width: 37%;
+                    position: absolute;
+                    background-color: #F5E31A;
+                    left: 31%;
+                    z-index: 8;
+                }
+
+            .elem .moving .moving-in{
+                display: inline-block;
+                white-space: nowrap;
+                animation-name: moving;
+                animation-duration: 5s;
+                animation-iteration-count: infinite;
+                animation-timing-function: linear;
+                
+               
+
+            }
+
+            .elem .moving .moving-in h5{
+                color:black;
+                display: inline-block;
+                font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+                margin-right: 15px;
+                font-weight: 600;
+            }
+            
+                @keyframes moving {
+                    from{
+                        transform: translateX(0);
+                    }
+                    to{
+                        transform: translateX(-100%);
+                    }
+                }
+
+                
+        </style>
+       
+</head>
+<body >
+
+
+    
+    <div id="loader" class="h-[100vh] w-[100%] bg-[black] flex items-center justify-center fixed z-[99] none">
+        <h1 id="loader-h1" class="font-work text-[6.5vw] sm:text-[5vw] font-extrabold tracking-wider text-white  z-[9] inline-block relative top-[3rem]">CREATIVE PRODUCTION <br> DEDICATE TO CULTURE <br> ADVANCEMENT THROUGH <br> STRATEGY AND DESIGN</h1>
+        <div id="yellow1" class="h-[100%] w-[100%] absolute bg-[#F5E31A]  z-[8] "></div>
+
+        <video id="loader-video" autoplay muted loop src="./assets/videos/loader.MP4" class="absolute w-[100%] h-[100%] object-cover z-[6] inline-block "></video>
+    </div> 
+    
+    <div id="main" class="bg-[#F5E31A]">
+        <div id="nav" class="h-[10vh] w-[100%] bg-[#F5E31A] absolute  items-center flex justify-between  py-4 px-4  top-[-6.5rem]">   
+            <div id="logo">
+                <svg class=" h-[15px] sm:h-[25px]" fill="none" viewBox="0 0 71 16"><path fill="#000" d="M0 .854h4.124L5.15 5.718c.336 1.548.691 3.95.691 3.95h.04s.375-2.124.73-3.752L7.696.854h3.73l1.085 5.022c.355 1.648.71 3.792.71 3.792h.04s.374-2.402.71-3.99L14.997.854h4.223L15.51 15.05h-4.164l-1.262-6.015a62 62 0 0 1-.494-2.76h-.04s-.237 1.53-.494 2.76L7.833 15.05H3.611zm18.081 14.035 1.697-1.906c-1.065-1.29-1.657-3.017-1.657-4.982 0-4.25 2.762-7.406 7.143-7.406 1.697 0 3.157.477 4.302 1.31L31.263 0l1.223 1.111-1.696 1.926c1.065 1.291 1.657 3.017 1.657 4.964 0 4.249-2.802 7.384-7.183 7.384-1.697 0-3.137-.476-4.282-1.29L19.305 16zm4.46-5.043 4.598-5.202c-.473-.457-1.086-.735-1.854-.735-1.973 0-2.98 1.767-2.98 4.09q0 1.013.236 1.847m5.723-1.847c0-.655-.079-1.29-.257-1.826l-4.578 5.181c.473.457 1.085.715 1.854.715 1.973 0 2.981-1.747 2.981-4.07M32.858.854h7.006c2.88 0 5.328 1.33 5.328 4.228 0 1.628-.829 2.78-2.31 3.455v.06c1.145.437 1.737 1.231 1.974 2.343.374 1.706.058 3.751.573 3.891v.219h-4.066c-.395-.278-.237-2.024-.533-3.295-.258-1.092-.731-1.648-1.934-1.648h-1.914v4.943h-4.124zm4.124 6.294h2.21c1.183 0 1.835-.516 1.835-1.509 0-.933-.592-1.528-1.776-1.528h-2.27zM45.771.854h4.124V5.5L54.159.853h4.737l-5.27 5.717 5.565 8.477h-4.795L50.804 9.43l-.907 1.032v4.585h-4.124z"></path><path fill="#000" d="M57.563 10.522h4.223c.139 1.132 1.007 1.667 2.367 1.667.81 0 1.796-.317 1.796-1.171s-.947-1.072-2.683-1.509c-2.367-.595-5.228-1.41-5.228-4.427 0-3.256 2.643-4.487 5.82-4.487 2.92 0 5.605 1.231 5.663 4.329h-4.084c-.119-.775-.671-1.27-1.796-1.27-.908 0-1.54.417-1.54.992 0 .833 1.205.952 3.317 1.468 2.367.577 4.736 1.509 4.736 4.527s-2.743 4.744-6.078 4.744c-3.671 0-6.453-1.587-6.513-4.863"></path></svg>
+            </div>
+           <div class=" transition-all duration-700 backdrop-filter backdrop-blur-2xl cursor-pointer tracking-wide z-[99] mx-0 px-0 w-full left-0 absolute bg-[red]    text-black top-[-900%] h-[80vh]   pt-4 flex flex-col items-center  justify-evenly    font-bebas"id="dropdown-menu">
+            <ul  class="transition-all duration-700 backdrop-filter backdrop-blur-2xl cursor-pointer tracking-wide z-[100] mx-0 px-0 w-full left-0 absolute bg-[#F5E31A]    text-black top-[-900%] h-[80vh]   pt-4 flex flex-col items-center  justify-evenly    font-bebas   text-center text-lg  md:static md:flex-row
+            md:h-20 md:justify-end md:right-0 md:gap-12 overflow-x-hidden ">
+                <li class=" pt-4 md:pt-0 inline-block">FEATURED</li>
+                <li class=" ">SECTORS</li>
+                <li class=" ">SERVICES</li>
+                <li class=" ">CLIENTS</li>
+                <li class=" ">ABOUT</li>
+                <li class=" ">CONTACT</li>
+                <li class="md:hidden"><ion-icon name="accessibility" style="font-size: 25px;"></ion-icon></li>
+            </ul>
+           
+           </div>
+           <div class="md:hidden">
+            <ion-icon name="menu-outline" style="color: black; font-size: 25px; font-weight: 500;" onclick="togglebtn(this)" id=""></ion-icon>
+           </div>
+           
+                 </div>
+          <div id="page1" class="h-[100vh] w-[100%] bg-[#F5E31A] flex items-center justify-center z-[-1]" >
+           
+            <h1 class="font-work text-[6.5vw] sm:text-[5vw] font-extrabold  tracking-wider relative top-[3rem]">CREATIVE PRODUCTION <br> DEDICATE TO CULTURE <br> ADVANCEMENT THROUGH <br> STRATEGY AND DESIGN</h1>
+            
+        </div>
+
+        <div id="page2">
+            <div class="elem" data-img="https://images.unsplash.com/photo-1598954034697-5e0de4bdbfa4?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D">
+                <h2>CONVERSE</h2>
+                <div class="moving">
+                    <div class="blur"></div>
+                    <div class="moving-in">
+                        <h5>CREATIVE DIRECTION</h5>
+                        <h5>DIGITAL DESIGN</h5>
+                        <h5>ART DIRECTION</h5>
+                        <h5>BRANDING AND IDENTITY</h5>
+                        <h5>TYPE DESIGN</h5>
+                    </div>
+                    <div class="moving-in">
+                        <h5>CREATIVE DIRECTION</h5>
+                        <h5>DIGITAL DESIGN</h5>
+                        <h5>ART DIRECTION</h5>
+                        <h5>BRANDING AND IDENTITY</h5>
+                        <h5>TYPE DESIGN</h5>
+                    </div>
+                    <div class="moving-in">
+                        <h5>CREATIVE DIRECTION</h5>
+                        <h5>DIGITAL DESIGN</h5>
+                        <h5>ART DIRECTION</h5>
+                        <h5>BRANDING AND IDENTITY</h5>
+                        <h5>TYPE DESIGN</h5>
+                    </div>
+                </div>
+            </div>
+            <div class="elem" data-img="https://images.unsplash.com/photo-1633884314667-744b2e8eb217?q=80&w=2090&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D">
+                <h2>BEYONCE</h2>
+                <div class="moving">
+                    <div class="blur"></div>
+                    <div class="moving-in h-[2vh]">
+                        <h5>CREATIVE DIRECTION</h5>
+                        <h5>DIGITAL DESIGN</h5>
+                        <h5>ART DIRECTION</h5>
+                        <h5>BRANDING AND IDENTITY</h5>
+                        <h5>TYPE DESIGN</h5>
+                    </div>
+                    <div class="moving-in">
+                        <h5>CREATIVE DIRECTION</h5>
+                        <h5>DIGITAL DESIGN</h5>
+                        <h5>ART DIRECTION</h5>
+                        <h5>BRANDING AND IDENTITY</h5>
+                        <h5>TYPE DESIGN</h5>
+                    </div>
+                    <div class="moving-in">
+                        <h5>CREATIVE DIRECTION</h5>
+                        <h5>DIGITAL DESIGN</h5>
+                        <h5>ART DIRECTION</h5>
+                        <h5>BRANDING AND IDENTITY</h5>
+                        <h5>TYPE DESIGN</h5>
+                    </div>
+                </div>
+            </div>
+            <div class="elem" data-img="https://images.unsplash.com/photo-1687800241981-2bd35acdb9d4?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D">
+                <h2>FUTURE WORLD</h2>
+                <div class="moving">
+                    <div class="blur"></div>
+                    <div class="moving-in">
+                        <h5>CREATIVE DIRECTION</h5>
+                        <h5>DIGITAL DESIGN</h5>
+                        <h5>ART DIRECTION</h5>
+                        <h5>BRANDING AND IDENTITY</h5>
+                        <h5>TYPE DESIGN</h5>
+                    </div>
+                    <div class="moving-in">
+                        <h5>CREATIVE DIRECTION</h5>
+                        <h5>DIGITAL DESIGN</h5>
+                        <h5>ART DIRECTION</h5>
+                        <h5>BRANDING AND IDENTITY</h5>
+                        <h5>TYPE DESIGN</h5>
+                    </div>
+                    <div class="moving-in">
+                        <h5>CREATIVE DIRECTION</h5>
+                        <h5>DIGITAL DESIGN</h5>
+                        <h5>ART DIRECTION</h5>
+                        <h5>BRANDING AND IDENTITY</h5>
+                        <h5>TYPE DESIGN</h5>
+                    </div>
+                </div>
+            </div>
+            <div class="elem" data-img="https://images.unsplash.com/photo-1633596683562-4a47eb4983c5?q=80&w=1932&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D">
+                <h2>MINERAL</h2>
+                <div class="moving">
+                    <div class="blur"></div>
+                    <div class="moving-in">
+                        <h5>CREATIVE DIRECTION</h5>
+                        <h5>DIGITAL DESIGN</h5>
+                        <h5>ART DIRECTION</h5>
+                        <h5>BRANDING AND IDENTITY</h5>
+                        <h5>TYPE DESIGN</h5>
+                    </div>
+                    <div class="moving-in">
+                        <h5>CREATIVE DIRECTION</h5>
+                        <h5>DIGITAL DESIGN</h5>
+                        <h5>ART DIRECTION</h5>
+                        <h5>BRANDING AND IDENTITY</h5>
+                        <h5>TYPE DESIGN</h5>
+                    </div>
+                    <div class="moving-in">
+                        <h5>CREATIVE DIRECTION</h5>
+                        <h5>DIGITAL DESIGN</h5>
+                        <h5>ART DIRECTION</h5>
+                        <h5>BRANDING AND IDENTITY</h5>
+                        <h5>TYPE DESIGN</h5>
+                    </div>
+                </div>
+            </div>
+            <div class="elem" data-img="https://images.unsplash.com/photo-1658486428378-ea8f6a76acc2?q=80&w=1932&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D">
+                <h2>NIKE NFL</h2>
+                <div class="moving">
+                    <div class="blur"></div>
+                    <div class="moving-in">
+                        <h5>CREATIVE DIRECTION</h5>
+                        <h5>DIGITAL DESIGN</h5>
+                        <h5>ART DIRECTION</h5>
+                        <h5>BRANDING AND IDENTITY</h5>
+                        <h5>TYPE DESIGN</h5>
+                    </div>
+                    <div class="moving-in">
+                        <h5>CREATIVE DIRECTION</h5>
+                        <h5>DIGITAL DESIGN</h5>
+                        <h5>ART DIRECTION</h5>
+                        <h5>BRANDING AND IDENTITY</h5>
+                        <h5>TYPE DESIGN</h5>
+                    </div>
+                    <div class="moving-in">
+                        <h5>CREATIVE DIRECTION</h5>
+                        <h5>DIGITAL DESIGN</h5>
+                        <h5>ART DIRECTION</h5>
+                        <h5>BRANDING AND IDENTITY</h5>
+                        <h5>TYPE DESIGN</h5>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div id="page3" class="min-h-[100vh] w-[100%] bg-[white] ">
+            <div id="page3-content"  class="min-h-[100vh] w-[100%]    grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 ">
+
+                <div id="left" class="min-h-[250vh]  w-[100%] sm:w-[100%] lg:w-[100%] overflow-hidden  ">
+                    <div id="img" class="overflow-hidden mb-1 mt-1 mx-1">
+                        <img src="https://images.unsplash.com/photo-1652464151878-7fdc1eb037f9?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1yZWxhdGVkfDExfHx8ZW58MHx8fHx8" alt="" class="h-[100%] w-[100%] object-cover object-right hover:scale-105 duration-150 transition-all ease-in">
+                    </div>
+                    <div id="img" class="overflow-hidden  mb-1 mt-1 mx-1">
+                        <img src="https://images.unsplash.com/photo-1666870747605-cca30ed154c5?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1yZWxhdGVkfDE0fHx8ZW58MHx8fHx8" alt="" class="h-[100%] w-[100%] object-cover object-right hover:scale-105 duration-150 transition-all ease-in">
+                    </div>
+                    <div id="img" class="overflow-hidden mb-1 mt-1 mx-1">
+                        <img src="https://images.unsplash.com/photo-1656067638332-1d189bf81079?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1yZWxhdGVkfDIyfHx8ZW58MHx8fHx8" alt="" class="h-[100%] w-[100%] object-cover object-right hover:scale-105 duration-150 transition-all ease-in">
+                    </div>
+                    <div id="img" class="overflow-hidden  mb-1 mt-1 mx-1">
+                        <img src="https://plus.unsplash.com/premium_photo-1664041966179-d27c0ae9891a?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1yZWxhdGVkfDM0fHx8ZW58MHx8fHx8" alt="" class="h-[100%] w-[100%] object-cover object-right hover:scale-105 duration-150 transition-all ease-in">
+                    </div>
+                    <div id="img" class="overflow-hidden mb-1 mt-1 mx-1">
+                        <img src="https://plus.unsplash.com/premium_photo-1666998556450-cbe6b11886bd?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1yZWxhdGVkfDIzfHx8ZW58MHx8fHx8" alt="" class="h-[100%] w-[100%] object-cover object-right hover:scale-105 duration-150 transition-all ease-in">
+                    </div>
+                    <div id="img" class="overflow-hidden  mb-1 mt-1 mx-1">
+                        <img src="https://images.unsplash.com/photo-1657279030088-89575454312f?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1yZWxhdGVkfDd8fHxlbnwwfHx8fHw%3D" alt="" class="h-[100%] w-[100%] object-cover object-right hover:scale-105 duration-150 transition-all ease-in">
+                    </div>
+                    <div id="img" class="overflow-hidden mb-1 mt-1 mx-1">
+                        <img src="https://images.unsplash.com/photo-1643282047613-c08798408fe2?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Mnx8NGslMjBpbWFnZXN8ZW58MHx8MHx8fDA%3D" alt="" class="h-[100%] w-[100%] object-cover object-right hover:scale-105 duration-150 transition-all ease-in">
+                    </div>
+                    <div id="img" class="overflow-hidden  mb-1 mt-1 mx-1">
+                        <img src="https://images.unsplash.com/photo-1634301982453-174c840229ae?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8NTN8fDRrJTIwaW1hZ2VzfGVufDB8fDB8fHww" alt="" class="h-[100%] w-[100%] object-cover object-right hover:scale-105 duration-150 transition-all ease-in">
+                    </div>
+                </div>
+
+                <div id="center" class="min-h-[250vh]  hidden sm:block lg:w-[100%] overflow-hidden  ">
+                    <div id="img" class="overflow-hidden mb-1 mt-1 mx-1">
+                        <img src="https://images.unsplash.com/photo-1627299406750-c0f7ba2d0f5f?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8NjN8fDRrJTIwaW1hZ2VzfGVufDB8fDB8fHww" alt="" class="h-[100%] w-[100%] object-cover object-right hover:scale-105 duration-150 transition-all ease-in">
+                    </div>
+                    <div id="img" class="overflow-hidden  mb-1 mt-1 mx-1">
+                        <img src="https://images.unsplash.com/photo-1622976807910-8ac6fbbd9897?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Nzh8fDRrJTIwaW1hZ2VzfGVufDB8fDB8fHww" alt="" class="h-[100%] w-[100%] object-cover object-right hover:scale-105 duration-150 transition-all ease-in">
+                    </div>
+                    <div id="img" class="overflow-hidden mb-1 mt-1 mx-1">
+                        <img src="https://images.unsplash.com/photo-1617468264185-e6535390e9a4?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8OTZ8fDRrJTIwaW1hZ2VzfGVufDB8fDB8fHww" alt="" class="h-[100%] w-[100%] object-cover object-right hover:scale-105 duration-150 transition-all ease-in">
+                    </div>
+                    <div id="img" class="overflow-hidden  mb-1 mt-1 mx-1">
+                        <img src="https://images.unsplash.com/photo-1658232190602-be6cd5b976f1?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTAxfHw0ayUyMGltYWdlc3xlbnwwfHwwfHx8MA%3D%3D" alt="" class="h-[100%] w-[100%] object-cover object-right hover:scale-105 duration-150 transition-all ease-in">
+                    </div>
+                    <div id="img" class="overflow-hidden mb-1 mt-1 mx-1">
+                        <img src="https://images.unsplash.com/photo-1643780209580-4930b4703f78?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTE3fHw0ayUyMGltYWdlc3xlbnwwfHwwfHx8MA%3D%3D" alt="" class="h-[100%] w-[100%] object-cover object-right hover:scale-105 duration-150 transition-all ease-in">
+                    </div>
+                    <div id="img" class="overflow-hidden  mb-1 mt-1 mx-1">
+                        <img src="https://media.istockphoto.com/id/1347310666/photo/processor-chip-tech-environment-blockchain-concept.webp?a=1&b=1&s=612x612&w=0&k=20&c=2WQDG4ZEDeOL5Jknk8d1ySVqP9sf-vpmkqdClEe2sbk=" alt="" class="h-[100%] w-[100%] object-cover object-right hover:scale-105 duration-150 transition-all ease-in">
+                    </div>
+                    <div id="img" class="overflow-hidden mb-1 mt-1 mx-1">
+                        <img src="https://images.unsplash.com/photo-1657632843433-e6a8b7451ac6?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTAyfHw0ayUyMGltYWdlc3xlbnwwfHwwfHx8MA%3D%3D" alt="" class="h-[100%] w-[100%] object-cover object-right hover:scale-105 duration-150 transition-all ease-in">
+                    </div>
+                    <div id="img" class="overflow-hidden  mb-1 mt-1 mx-1">
+                        <img src="https://media.istockphoto.com/id/1289928297/photo/white-semi-trailer-truck-heading-down-a-four-lane-highway-at-dusk.webp?a=1&b=1&s=612x612&w=0&k=20&c=SL4PH3ZHTgMn2MUbxfVeQBV9XcIt8GBH9s-odU0srj0=" alt="" class="h-[100%] w-[100%] object-cover object-right hover:scale-105 duration-150 transition-all ease-in">
+                    </div>
+                    <div id="img" class="overflow-hidden  mb-1 mt-1 mx-1">
+                        <img src="https://images.unsplash.com/photo-1730125477357-03a906bde005?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxmZWF0dXJlZC1waG90b3MtZmVlZHwxOHx8fGVufDB8fHx8fA%3D%3D" alt="" class="h-[100%] w-[100%] object-cover object-right hover:scale-105 duration-150 transition-all ease-in">
+                    </div>
+                </div> 
+
+                <div id="right" class="min-h-[250vh] hidden lg:block lg-w-[100%] overflow-hidden ">
+                    <div id="img" class="overflow-hidden  mb-1 mt-1 mx-1">
+                        <img src="https://images.unsplash.com/photo-1731848358278-61c25d75a855?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxmZWF0dXJlZC1waG90b3MtZmVlZHwzMHx8fGVufDB8fHx8fA%3D%3D" alt="" class="h-[100%] w-[100%] object-cover object-right hover:scale-105 duration-150 transition-all ease-in">
+                    </div>
+                    <div id="img" class="overflow-hidden  mb-1 mt-1 mx-1">
+                        <img src="https://images.unsplash.com/photo-1629129281524-b1e1a1a099d2?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxmZWF0dXJlZC1waG90b3MtZmVlZHwyOXx8fGVufDB8fHx8fA%3D%3D" alt="" class="h-[100%] w-[100%] object-cover object-right hover:scale-105 duration-150 transition-all ease-in">
+                    </div>
+                    <div id="img" class="overflow-hidden mb-1 mt-1 mx-1">
+                        <img src="https://images.unsplash.com/photo-1731432245325-d820144afe4a?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxmZWF0dXJlZC1waG90b3MtZmVlZHwyNXx8fGVufDB8fHx8fA%3D%3D" alt="" class="h-[100%] w-[100%] object-cover object-right hover:scale-105 duration-150 transition-all ease-in">
+                    </div>
+                    <div id="img" class="overflow-hidden  mb-1 mt-1 mx-1">
+                        <img src="https://images.unsplash.com/photo-1731429666676-aecae906d567?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxmZWF0dXJlZC1waG90b3MtZmVlZHwxNnx8fGVufDB8fHx8fA%3D%3D" alt="" class="h-[100%] w-[100%] object-cover object-right hover:scale-105 duration-150 transition-all ease-in">
+                    </div>
+                    <div id="img" class="overflow-hidden mb-1 mt-1 mx-1">
+                        <img src="https://images.unsplash.com/photo-1731641904795-2873e1da5ac1?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxmZWF0dXJlZC1waG90b3MtZmVlZHwxMnx8fGVufDB8fHx8fA%3D%3D" alt="" class="h-[100%] w-[100%] object-cover object-right hover:scale-105 duration-150 transition-all ease-in">
+                    </div>
+                    <div id="img" class="overflow-hidden  mb-1 mt-1 mx-1">
+                        <img src="https://images.unsplash.com/photo-1730818203797-897b2838105a?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxmZWF0dXJlZC1waG90b3MtZmVlZHw1fHx8ZW58MHx8fHx8" alt="" class="h-[100%] w-[100%] object-cover object-right hover:scale-105 duration-150 transition-all ease-in">
+                    </div>
+                    <div id="img" class="overflow-hidden mb-1 mt-1 mx-1">
+                        <img src="https://plus.unsplash.com/premium_photo-1731114103697-c3a21192181c?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxmZWF0dXJlZC1waG90b3MtZmVlZHw2OHx8fGVufDB8fHx8fA%3D%3D" alt="" class="h-[100%] w-[100%] object-cover object-right hover:scale-105 duration-150 transition-all ease-in">
+                    </div>
+                    <div id="img" class="overflow-hidden  mb-1 mt-1 mx-1">
+                        <img src="https://plus.unsplash.com/premium_photo-1731138873386-33b3f7f5d0c9?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxmZWF0dXJlZC1waG90b3MtZmVlZHw5NXx8fGVufDB8fHx8fA%3D%3D" alt="" class="h-[100%] w-[100%] object-cover object-right hover:scale-105 duration-150 transition-all ease-in">
+                    </div>
+                    <div id="img" class="overflow-hidden  mb-1 mt-1 mx-1">
+                        <img src="https://images.unsplash.com/photo-1731532034409-22542a373e62?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxmZWF0dXJlZC1waG90b3MtZmVlZHwxNTh8fHxlbnwwfHx8fHw%3D" alt="" class="h-[100%] w-[100%] object-cover object-right hover:scale-105 duration-150 transition-all ease-in">
+                    </div>
+                </div>
+            </div>
+        </div>
+       
+        <div id="page4" class="h-[43vh] w-[100%] pt-24">
+            <div id="page4-content" class="flex flex-col items-center justify-center text-center">
+                <h1 class=" text-[30px] leading-none sm:text-6xl font-normal font-work">We believe in the POWER of <br>
+                    INTENTIONAL CREATIVITY.</h1>
+
+                  
+
+                    <button class="h-[70px] w-[200px] bg-gray-200 text-gray-500 rounded-lg mt-8 cursor-pointer hover:bg-black hover:text-white duration-150 transition-all ease-in hover:scale-105">PARTNER WITH US</button>
+
+                    <div class="text-3xl " style="clip-path: inset(0 0 0 0 );" id="arrow" >
+                        <div class="transition ease-in-out hover:-translate-y-5  -rotate-45 mt-8  p-4 rounded-full " >↗</div>
+                     </div>
+
+            </div>
+        </div>
+
+        <div id="footer" class="h-[20vh] w-[100%] bg-[#F5E31A] mt-16">
+            <div id="footer-content" class="h-[20vh] w-[100%] p-4  md:flex md:flex-row justify-between">
+                <div id="left" class=" pb-5 inline-block ">
+                    <h1 class="text-black font-normal leading-4 text-sm"><b> New York City</b> <br>
+                       <b> 3:24 AM</b></h1>
+                       <br>
+                </div>
+                <div id="right" class=" w-[40%]">
+                    <div id="right-content " class=" flex justify-evenly gap-6  font-normal leading-6">
+                        <ul  class="flex flex-col">
+                            <l1>Projects</l1>
+                            <l1>Ideas</l1>
+                            <l1>About</l1>
+                        </ul>
+                        <ul  class="flex flex-col">
+                            <l1>Instagram</l1>
+                            <l1>LinkedIn</l1>
+                            <l1>Twitter</l1>
+                        </ul>
+                        <ul  class="flex flex-col">
+                            <l1>Policy</l1>
+                            <l1>hello@worl.studio</l1>
+                            <l1>+00 0000000000</l1>
+                        </ul>
+                        
+                    </div>
+               
+                    <div id="mail" class=" text-black mt-8   border-gray-500 border-b-[1px]">
+                        <input type="text" placeholder="  Enter email to subscribe" class="bg-transparent px-2 py-1 text-black w-[100%] relative bottom-0">
+                    </div>
+                </div>
+            </div>
+        </div>  
+
+        </div>
+
+        <script src="https://cdn.jsdelivr.net/npm/locomotive-scroll@3.5.4/dist/locomotive-scroll.js"></script>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js" integrity="sha512-7eHRwcbYkK4d9g/6tD/mhkf++eoTHwpNM9woBxtPUBWm67zeAfFC+HrdoE2GanKeocly/VxeLvIqwvCdk7qScg==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+
+    <script src="script.js"></script>
+
+</body>
+</html>
